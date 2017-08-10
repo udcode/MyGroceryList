@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="delete the item?"
+    android:textAllCaps="false"
+    android:textSize="24sp"
+    android:gravity="center"
+    android:background="#f50814"
+    android:textStyle="bold|italic" />
+
+<TableRow
+    android:layout_gravity="center"
+    android:padding="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/noID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO" />
+
+    <Button
+        android:id="@+id/yesID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES" />
+</TableRow>
+
+</LinearLayout>

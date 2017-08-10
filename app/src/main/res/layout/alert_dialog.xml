@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/enter_groceryID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/enter_grocery"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        <EditText
+            android:id="@+id/enter_nameID"
+            android:layout_below="@id/enter_groceryID"
+            android:hint="@string/enter_name"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/enter_qtyID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_qty"
+                android:textStyle="bold"
+                android:layout_below="@id/enter_nameID"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/save_btnID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enter_qtyID"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent"
+                android:text="save"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
